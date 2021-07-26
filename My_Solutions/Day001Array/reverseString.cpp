@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 string reverseWord(string str){
     
   int l = str.length();
@@ -11,7 +10,11 @@ string reverseWord(string str){
     str[l-i-1] = temp;
   }
   cout<<str;
+  return str;
 }
 main(){
+    // cout<< "Hey there!!!";
     reverseWord("APFGMRZXIFPSXKOQDRRQJBBZ");
+    return 0;
 }
+
