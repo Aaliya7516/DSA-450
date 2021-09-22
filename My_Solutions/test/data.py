@@ -1,19 +1,16 @@
-a  = input()
+def sol (A):
+	n = len(A)
+	ans  = [0]*n
+	ans[0] = 1
+	for i in range(1,n):
+		ans[i] = ans[i-1]*A[i-1]
+	
+	r = 1
+	for i in range(n-1, -1, -1):
+		ans[i] *= r
+		r *= A[i]
 
-res = ''
-def Sub(a):
-    ans = ""
-    for i in a:
-        if (i not in ans):
-            ans = ans+i
-        else:
-            break
-    return ans
-
-for i in range(len(a)):
-    x = Sub (a[i:])
-    if len(x) > len (res):
-        res = x
-print(res)
-print(len(res))
+	return ans
+print(sol([1,1,2,1,1,0,1]))
+print(sol([1,0,1,1,0,1]))
 
