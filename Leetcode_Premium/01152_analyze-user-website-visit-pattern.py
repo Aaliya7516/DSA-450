@@ -27,6 +27,12 @@
 # The 3-sequence ("home", "maps", "home") was visited at least once by 1 user.
 # The 3-sequence ("cart", "maps", "home") was visited at least once by 1 user.
 
+# Example 2:
+# Input: username = ["ua","ua","ua","ub","ub","ub"], 
+#        timestamp = [1,2,3,4,5,6], 
+#        website = ["a","b","a","a","b","c"]
+# Output: ["a","b","a"]
+
 # Note:
 # 1) 3 <= N = username.length = timestamp.length = website.length <= 50
 # 2) 1 <= username[i].length <= 10
@@ -35,4 +41,3 @@
 # 5) Both username[i] and website[i] contain only lowercase characters.
 # 6) It is guaranteed that there is at least one user who visited at least 3 websites.
 # 7) No user visits two websites at the same time.
-
